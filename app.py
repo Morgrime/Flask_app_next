@@ -41,5 +41,9 @@ def index():  # Определение функции для обработки 
 def contacts():  # Определение функции для обработки запроса к URL /contacts.html
     return render_template('contacts.html')  # Возвращает шаблон contacts.html
 
+@app.route('/users.html')
+def users():
+    return render_template('users.html')
+
 if __name__ == '__main__':  # Если код запускается напрямую
     app.run()  # Запуск приложения

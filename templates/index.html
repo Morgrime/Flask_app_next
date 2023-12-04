@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Главная</title>
         <link rel="stylesheet" href="Html.css">  <!-- Подключение таблицы стилей -->
     </head>
     <body>
+        <a href="{{url_for('index')}}">Главная страница</a>
         <a href="{{url_for('contacts')}}">Контакты</a>  <!-- Создание ссылки на страницу "Контакты" -->
+        <a href="{{url_for('users')}}">Юзеры</a>
         <h1>Главная</h1>  <!-- Заголовок страницы -->
         <p>Спортивные товары</p>  <!-- Абзац с текстом о спортивных товарах -->
         <a href="sport.pdf" download>Скачать файл</a>
